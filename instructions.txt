@@ -1,0 +1,25 @@
+Crear proyecto Symfony
+Traditional
+composer create-project symfony/website-skeleton <name>
+Microservice, Console App
+composer create-project symfony/skeleton <name>
+
+Crear Entidades
+php bin/console make:entity <name>
+
+Agregar los Getters/Setters a entidades
+A todas las entidades
+php bin/console make:entity --regenerate App
+A una especifica entidad
+php bin/console make:entity --regenerate App\\Entity\\<name>
+
+Crear Migraciones en base a Entidades
+Crear todas las migraciones de todas las entidades
+php bin/console make:migration
+
+Migrar las Migraciones
+Migra todas las migraciones
+php bin/console doctrine:migrations:migrate
+
+Crear TWIG
+composer require template
