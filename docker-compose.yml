@@ -4,7 +4,7 @@ services:
     container_name: symfony-app
     build: .
     ports:
-      - "8080:5000"
+      - "8080:80"
   db:
     container_name: mysql
     image: mysql:latest

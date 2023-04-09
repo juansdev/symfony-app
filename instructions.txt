@@ -23,3 +23,8 @@ php bin/console doctrine:migrations:migrate
 
 Crear TWIG
 composer require template
+
+Crear Formulario a partir de una entidad
+php bin/console make:form <name>
+
+Lo que esta dentro de buildForm, corresponde a los campos que se van a mostrar en el formulario, y los campos que se van a guardar en la base de datos.

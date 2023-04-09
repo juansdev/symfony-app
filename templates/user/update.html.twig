@@ -1,0 +1,20 @@
+{% extends('base.html.twig') %}
+
+{% block title %}
+	<title>Actualizar usuario</title>
+{% endblock %}
+
+{% block body %}
+	<div class="container">
+        <a href="{{ path('getUsers') }}" class="btn btn-primary ms-auto d-block w-25 mt-3">Volver</a>
+        {{ form_start(form_user, {'attr': {'class': 'col-md-4 mx-auto d-flex flex-column gap-3 text-center'}}) }}
+			<h1>Actualizar usuario</h1>
+            {{ form_row(form_user.name) }}
+            {{ form_row(form_user.lastname) }}
+            {{ form_row(form_user.email) }}
+            {{ form_row(form_user.password) }}
+            {{ form_widget(form_user.submit) }}
+        {{ form_end(form_user) }}
+    </div>
+{% endblock %}
+

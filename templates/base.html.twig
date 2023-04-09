@@ -3,11 +3,13 @@
     <head>
         <meta charset="UTF-8">
         {% block title %}<title>¡Bienvenido!</title>{% endblock %}
+        <link rel="stylesheet" href="{{asset('../vendor/twbs/bootstrap/dist/css/bootstrap.min.css')}}"></link>
         <link rel="stylesheet" href="{{asset('assets/css/styles.css')}}"></link>
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
         {% block body %}{% endblock %}
+        <link rel="stylesheet" href="{{asset('../vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js')}}"></link>
         {% block javascripts %}{% endblock %}
     </body>
 </html>
